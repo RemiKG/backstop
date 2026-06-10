@@ -1,0 +1,20 @@
+{
+  "name": "backstop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backstop — the one alert that fires when an alert can't. An AI agent that reads your real saved-search detections, computes which have gone silently blind from the real last-seen timestamp of the data they depend on, and ranks the blind ones by exposure.",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "seed": "node scripts/seed.mjs",
+    "unseed": "node scripts/seed.mjs --teardown",
+    "stop-feed": "node scripts/stop-feed.mjs"
+  },
+  "dependencies": {
+    "next": "14.2.33",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
